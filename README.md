@@ -21,7 +21,7 @@ The project involves securing web based applications with defense mechanims that
     3. Start the services apache2 and mysql, they are needed to interact with the database and browser. `service apache2 start` and `service mysql start`.
     4. Insert following SQL commands in order `mysql -u root -p`(enters mysql shell), `create user 'user1'@'localhost' identified by 'user';`(new user needed because I needed to modified the user information in the config.php in both apps to be username = user1 and password = user for testing purposes), `grant all privileges on * . * to 'user1'@'localhost';`(lets me use commands without any barriers),`select user from mysql.user;`(sets the user to be user1 instead of the default user),`flush priviliges;`(applies changes to user immediately),`create database hms;` OR `create database shopping;`(these are the names of the databases listed in each of the apps, use the one for the specific instance), `use hms;` OR `use shopping;`(depends on previous selection), `source /newDir/Apps/Hospital Management System Project/SQL File/hms.sql;` OR 
 `source /newDir/Apps/Online Shopping Portal Project/SQL File/shopping.sql;` (depends on previous selection, specifiy the database file directory in the container, not local machine).
-    4. Pressing "ctrl + D" should exit out to the container command prompt.
+    4. Pressing "ctrl + D" should exit out to the container command shell.
 4. After opening `localhost` in browser, the two applications should be visible.
 
 Time to put everything into a bash script(basically inserts command prompt commands for you!) and then specifiy the bash script in a .yaml file.
