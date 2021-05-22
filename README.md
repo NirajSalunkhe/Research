@@ -55,7 +55,7 @@ Time to put everything into a bash script(basically inserts command prompt comma
 
 #### TASK#1 Additional Notes ####
 - `docker images` lets you view the images on your system.
-- Once compose file is running, you can open a new command prompt, and enter `docker ps` to access the container id. With that information, entering `docker exec -it <container ID> /bin/bash` will let you access the container and modify it while the container is running.
+- Once the compose file is running, you can open a new command prompt, and enter `docker ps` to access the container id. With that information, entering `docker exec -it <container ID> /bin/bash` will let you access the container and modify it while the container is running.
 
 
 
