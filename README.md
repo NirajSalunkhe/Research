@@ -8,6 +8,12 @@ The project involves securing web based applications with defense mechanims that
 - We are connecting databases to each of the web applications because we will also be testing content that is stored.
 - How to connect those PHP apps to the container and interacting with it on the localhost in my browser.
 
+- Cross Site Scripting(XSS) \- when malicious code is sent through a web app to attack a user. There are many types, we will be looking at CLient XSS and Stored XSS. 
+    - Client XSS occurs when the the attacker uses a JS call as part of the HTML code. 
+    - Stored XSS occurs when the user is trying to store to the database of the web app, but sees different information, which could be potentionally malicious.
+    - ASK AND CONFIRM IS THIS INFO IS CORRECT....^^^
+- 
+
 ## Tasks and Steps Taken:
 
 #### TASK#1: Setup and interact with [**PHP Gurukul Hospital Management System**](https://phpgurukul.com/hospital-management-system-in-php/) and [**PHP Gurukul Shopping**](https://phpgurukul.com/shopping-portal-free-download/) using bash scripts and docker compose.
@@ -60,8 +66,8 @@ Time to put everything into a bash script(basically inserts command prompt comma
 #### TASK#2: Understand and record the security breaches in the PHP Applications, locations to where these breaches are can be found in paths listed in [Satpaths.zip](https://github.com/NirajSalunkhe/Research2021/files/6542755/Satpaths.zip).
 
 #### TASK#2:
-1. Open the .json folder, check the file path that is listed in each of the \_\_\_\_\_\_. The line number of the breaches is written below the file paths.
-2. The security breaches can be classified as false positive, positive, and negative.
+1. Open the .json folder, check the file path that is listed in each of the \_\_\_\_\_\_ ASK WHAT THIS THING IS CALLED. The line number of the breaches is written below the file paths.
+2. The security breaches can be classified as false positive, positive, and negative. 
 
 Shopping App Locations | Classification | Hospitial App Locations | Classification
 | :---: | :---: | :---: | :---:
