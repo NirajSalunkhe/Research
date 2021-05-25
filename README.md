@@ -57,7 +57,16 @@ Time to put everything into a bash script(basically inserts command prompt comma
 - `docker images` lets you view the images on your system.
 - Once the compose file is running, you can open a new command prompt, and enter `docker ps` to access the container id. With that information, entering `docker exec -it <container ID> /bin/bash` will let you access the container and modify it while the container is running.
 
+#### TASK#2: Understand and record the security breaches in the PHP Applications, locations to where these breaches are can be found in paths listed in [Satpaths.zip](https://github.com/NirajSalunkhe/Research2021/files/6535688/Satpaths.zip).
 
+#### TASK#2:
+1. Open the .json folder, check the file path that is listed in each of the \_\_\_\_\_\_. The line number of the breaches is written below the file paths.
+2. The security breaches can be classified as false positive, positive, and negative.
+
+Shopping App Locations | Classification | Hospitial App Locations | Classification
+| :---: | :---: | :---: | :---:
+Content Cell  | Content Cell | Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell | Content Cell
 
 
 
