@@ -1,18 +1,17 @@
 # Web Application Security Research 2021
 The project involves securing web based applications with defense mechanims that will prevent injection attacks. Topics: Software Security, Web Application Security, Web Browser Security, Privacy.
 
-## Concepts Learned:
+## Overview:
 - We are manually setting up and running docker containers to simplfiy the process of setting up environments to test PHP web applications.
 - Worked on bash scripts, these can be added to execute a seqeunce of command line commands, they can be called in the docker-compose.yaml file to make things easier.
 - Setting up a container lets you use multiple command prompts, giving you more freedom in what you want to do.
 - We are connecting databases to each of the web applications because we will also be testing content that is stored.
 - How to connect those PHP apps to the container and interacting with it on the localhost in my browser.
-
 - Cross Site Scripting(XSS) \- when malicious code is sent through a web app to attack a user. There are many types, we will be looking at CLient XSS and Stored XSS. 
     - Client XSS occurs when the the attacker uses a JS call as part of the HTML code. 
     - Stored XSS occurs when the user is trying to store to the database of the web app, but sees different information, which could be potentionally malicious.
-    - ASK AND CONFIRM IS THIS INFO IS CORRECT....^^^
-- 
+- Learning to finding exploits in php code, inspecting the lifecycle of variables, and identifying explotiable global variable calls with the use of filter(intval()...etc) functions.
+- Confirming the paths as breaches listed by the exploit-finding application.
 
 ## Tasks and Steps Taken:
 
@@ -66,13 +65,11 @@ Time to put everything into a bash script(basically inserts command prompt comma
 #### TASK#2: Understand and record the security breaches in the PHP Applications, locations to where these breaches are can be found in paths listed in [Satpaths.zip](https://github.com/NirajSalunkhe/Research2021/files/6542755/Satpaths.zip).
 
 #### TASK#2:
-1. Open the .json folder, check the file path that is listed in each of the \_\_\_\_\_\_ ASK WHAT THIS THING IS CALLED. The line number of the breaches is written below the file paths.
-2. The security breaches can be classified as false positive, positive, and negative. 
-
-Shopping App Locations | Classification | Hospitial App Locations | Classification
-| :---: | :---: | :---: | :---:
-Content Cell  | Content Cell | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell | Content Cell
+1. Open the .json folder, check the file path that is listed in each of the .json files. The line number of the breaches is written below the file paths.
+2. The security breaches can be classified as false positive and positives. We are basically identifying the credibility of the exploit-finding algorithm, false positives indicate that the algorithm incorrectly found an \'exploit\' while positives confirm the exploit.
+3. Wherever it is applicable, use dev tools through inspect element to inject javascript code:  into the location that is listed as an exploit. `<script>alert(1)</script>
+` If 1 is printed, its exploitable.
+4. Go through and record the findings. Shopping Data and Hospital Data.
 
 
 
