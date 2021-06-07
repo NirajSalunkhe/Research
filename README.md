@@ -75,8 +75,8 @@ Time to put everything into a bash script(basically inserts command prompt comma
 - `intval()` - php function that returns integer value of variable or 0 on failure. Empty arrays return 0, non-empty arrays return 1. Filters JS code.
 - `mysql_real_escape_string()` - php function that calls MySQL's library function mysql_real_escape_string, which prepends backslashes to the following characters: \x00, \n, \r, \, ', " and \x1a.
 - `$\_GET` - a PHP super global variable which is used to collect form data after submitting an HTML form with method="get". Can also collect data sent in the URL.
-- `$\_POST`
-- `$\_SERVER`
+- `$\_POST` - a PHP super global variable which is used to collect form data after submitting an HTML form with method="post". `$\_POST` is also widely used to pass variables.
+- `$\_SERVER` - an array containing information such as headers, paths, and script locations. The entries in this array are created by the web server.
 
 
 
