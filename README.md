@@ -67,9 +67,16 @@ Time to put everything into a bash script(basically inserts command prompt comma
 #### TASK#2:
 1. Open the .json folder, check the file path that is listed in each of the .json files. The line number of the breaches is written below the file paths.
 2. The security breaches can be classified as false positive and positives. We are basically identifying the credibility of the exploit-finding algorithm, false positives indicate that the algorithm incorrectly found an \'exploit\' while positives confirm the exploit.
-3. Wherever it is applicable, use dev tools through inspect element to inject javascript code:  into the location that is listed as an exploit. `<script>alert(1)</script>
+3. If applicable, use dev tools through inspect element to inject javascript code:  into the location that is listed as an exploit. `<script>alert(1)</script>
 ` If 1 is printed, its exploitable.
-4. Go through and record the findings. Shopping Data and Hospital Data.
+4. Go through and record the findings: [Shopping Data](https://github.com/NirajSalunkhe/Research2021/files/6606273/Shopping.Satpath.Classifications.-.Sheet1.pdf) and [Hospital Data](https://github.com/NirajSalunkhe/Research2021/files/6606275/Hospital.Satpath.Classifications.-.Sheet1.pdf).
+
+#### TASK#2 Additional Notes ####
+- `intval()` - php function that returns integer value of variable or 0 on failure. Empty arrays return 0, non-empty arrays return 1. Filters JS code.
+- `mysql_real_escape_string()` - php function that calls MySQL's library function mysql_real_escape_string, which prepends backslashes to the following characters: \x00, \n, \r, \, ', " and \x1a.
+- `$\_GET` - a PHP super global variable which is used to collect form data after submitting an HTML form with method="get". Can also collect data sent in the URL.
+- `$\_POST`
+- `$\_SERVER`
 
 
 
